@@ -1,8 +1,5 @@
 import React, { Component } from "react";
-import * as THREE from 'three';
-var OBJLoader = require('three-obj-loader');
-var OrbitControls = require('three-orbitcontrols');
-OBJLoader(THREE);
+import ThreeHelper from '../helpers/ThreeHelper';
 
 class ThreeView extends Component {
     constructor(props) {
@@ -10,12 +7,10 @@ class ThreeView extends Component {
         this.state = {
             objReady: false
         }
-
-        this.obj = new FileReader();
     }
 
     componentDidMount() {
-        this.obj.readAsDataURL(this.props.obj);
+        this.helper = new ThreeHelper(this.props.modelo, document.getElementById('three_view'));
     }
 
     render() {
