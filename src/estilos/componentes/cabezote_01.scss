@@ -1,0 +1,16 @@
+.cabezote {
+    height: 100vh;
+    position: relative;
+
+    .img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        max-width: 1400px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}

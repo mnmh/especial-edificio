@@ -1,24 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './estilos/source.scss';
+import Cabezote_01 from './componentes/Cabezote_01';
+import ThreeView from './componentes/ThreeView';
+import portada from './img/edificio_render.jpg';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ThreeView obj={modelo}/>
+      <Cabezote_01 img={portada} />
+      <Cabezote_01 img={portada} />
     </div>
   );
 }
