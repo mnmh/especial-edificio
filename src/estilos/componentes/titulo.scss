@@ -1,0 +1,57 @@
+.cabezote.titulo {
+    display: flex;
+    align-items: center;
+    background-color: rgba(249, 212, 35, 0.8);
+
+    h1 {
+        font-size: 15vw;
+        font-weight: normal;
+        margin: 0;
+        line-height: 0.8em;
+        color: $naranja;
+    }
+}
+
+.cabezote.texto {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 1);
+    overflow: hidden;
+
+    .insideImg {
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+
+    .imgMapa {
+        width: 100%;
+        max-width: 1400px;
+    }
+
+    .txt {
+        color: #333;
+        max-width: 650px;
+        padding: 50px;
+
+        h2 {
+            font-size: 3em;
+            color: $naranja;
+        }
+
+        p {
+            font-family: 'Alegreya', serif;
+            font-size: 1.5em;
+        }
+
+        .asterix {
+            color: #FF4E50;
+        }
+
+        .nota {
+            font-size: 1em;
+            color: #555;
+            font-style: italic;
+        }
+    }
+}
