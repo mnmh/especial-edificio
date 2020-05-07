@@ -1,0 +1,23 @@
+.panorama {
+    height: 200px;
+    background-color: rgba(249, 212, 35, 0.8);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .react-bodymovin-container {
+        width: 200px;
+
+        path {
+            fill: white;
+            stroke: white
+        }
+    }
+
+    h3 {
+        margin: 0;
+        color: white;
+        font-size: 3em;
+    }
+}

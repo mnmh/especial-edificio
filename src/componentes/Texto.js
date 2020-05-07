@@ -2,7 +2,7 @@ import React from 'react';
 
 import Mapa from '../componentes/adicionales/Mapa'
 
-var Titulo = props => {
+var Texto = props => {
     return (
         <>
             <div className="cabezote texto">
@@ -21,4 +21,4 @@ var Titulo = props => {
     )
 }
 
-export default Titulo;
+export default Texto;

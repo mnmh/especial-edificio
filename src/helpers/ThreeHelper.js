@@ -53,8 +53,28 @@ class ThreeHelper {
         var light = new THREE.AmbientLight(0xffffff, 0.5);
         this.scene.add(light);
 
+        var dollyCurrent = 150
+        var rotateUno = 0
+        var rotateDos = 0
+
         window.addEventListener('scroll', function (e) {
-            this.console.log('h');
+            var primer_marcador_prev = document.getElementById("primer_marcador").offsetTop - (document.getElementById("primer_marcador").offsetHeight / 2);
+            var primer_marcador = document.getElementById("primer_marcador").offsetTop;
+            var mainScroll = window.pageYOffset;
+
+            if (mainScroll < primer_marcador_prev) {
+                cameraControls.rotateTo(rotateUno, rotateDos, true);
+                cameraControls.dollyTo(dollyCurrent, true);
+            } else if (mainScroll > primer_marcador_prev) {
+                var dif = mainScroll - primer_marcador_prev
+                var rotateUnoTemp = rotateUno + (dif / 500)
+                var rotateDosTemp = rotateDos + (dif / 500)
+                var dollyTemp = dollyCurrent - (dif / 30)
+                if (rotateDosTemp > 1.1) rotateDosTemp = 1.1
+                if (dollyTemp < 110) dollyTemp = 110
+                cameraControls.rotateTo(rotateUnoTemp, rotateDosTemp, false);
+                cameraControls.dollyTo(dollyTemp, false);
+            }
         })
 
         const render = () => {
@@ -68,7 +88,7 @@ class ThreeHelper {
         render();
 
         cameraControls.rotateTo(0, 0, true);
-        cameraControls.dollyTo(100, true);
+        cameraControls.dollyTo(150, true);
 
         var s = this.scene;
 

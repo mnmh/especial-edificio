@@ -29,10 +29,64 @@
         max-width: 1400px;
     }
 
+    &.transparent {
+        background-color: rgba(255, 255, 255, 0.9);
+
+        .txt {
+            max-width: 100%;
+
+            p {
+                margin-top: 0;
+            }
+        }
+    }
+
+    .column {
+        column-count: 2;
+        column-gap: 40px;
+    }
+
+    .openQuote {
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            content: '“';
+            font-size: 6.5em;
+            position: absolute;
+            top: -70px;
+            color: #999;
+            opacity: 0.3;
+            left: -20px;
+            z-index: -1;
+        }
+    }
+
+    .closeQuote {
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            content: '”';
+            font-size: 6.5em;
+            position: absolute;
+            bottom: -130px;
+            color: #999;
+            opacity: 0.3;
+            right: -20px;
+            z-index: -1;
+        }
+    }
+
     .txt {
         color: #333;
         max-width: 650px;
         padding: 50px;
+        color: #333;
+
+        .subtitulo {
+            font-size: 1.25em;
+        }
 
         h2 {
             font-size: 3em;

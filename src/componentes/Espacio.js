@@ -3,7 +3,7 @@ import React from 'react';
 var Espacio = props => {
     return (
         <>
-            <div className="cabezote"></div>
+            <div id={props.id} className="cabezote"></div>
         </>
     )
 }
