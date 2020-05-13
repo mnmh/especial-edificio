@@ -1,6 +1,7 @@
 {
   "name": "edificio",
   "version": "0.1.0",
+  "homepage": "/edificio",
   "private": true,
   "dependencies": {
     "@lottiefiles/lottie-interactivity": "^0.1.3",
