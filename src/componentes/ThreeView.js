@@ -10,7 +10,7 @@ class ThreeView extends Component {
     }
 
     componentDidMount() {
-        this.helper = new ThreeHelper(this.props.modelo, document.getElementById('three_view'));
+        this.helper = new ThreeHelper(this.props.marcador, this.props.modelo, document.getElementById('three_view'));
     }
 
     render() {
