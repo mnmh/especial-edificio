@@ -18,11 +18,13 @@ class ThreeHelper {
 
     start() {
         this.THREE = THREE;
+        var width = window.innerWidth
+        if (width < 1000) width = 1000
         this.scene = new THREE.Scene();
         this.scene.background = new THREE.Color(0xffffff);
         const camera = new THREE.PerspectiveCamera(
             75,
-            window.innerWidth / window.innerHeight,
+            width / window.innerHeight,
             0.1,
             1000
         );
@@ -33,7 +35,7 @@ class ThreeHelper {
         const cameraControls = new CameraControls(camera, renderer.domElement);
         cameraControls.maxPolarAngle = 3.14 / 2 - 0.2;
 
-        renderer.setSize(window.innerWidth, window.innerHeight - 55);
+        renderer.setSize(width, window.innerHeight - 55);
         renderer.shadowMap.enabled = true;
         renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 

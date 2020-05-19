@@ -13,4 +13,13 @@
         left: 50%;
         transform: translate(-50%, 0);
     }
+
+    &.space {
+        min-height: 50vh;
+    }
+
+    &.galeria {
+        padding-top: 60px;
+        background-color: rgba(249, 212, 35, 0.95);
+    }
 }

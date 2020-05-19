@@ -22,6 +22,10 @@
         display: flex;
         width: 100%;
         align-items: center;
+
+        @media all and (max-width: 1000px) {
+            flex-wrap: wrap;
+        }
     }
 
     .imgMapa {
@@ -44,6 +48,10 @@
     .column {
         column-count: 2;
         column-gap: 40px;
+
+        @media all and (max-width: 1000px) {
+            column-count: 1;
+        }
     }
 
     .openQuote {
@@ -96,6 +104,10 @@
         p {
             font-family: 'Alegreya', serif;
             font-size: 1.5em;
+
+            @media all and (max-width: 1000px) {
+                font-size: 1em;
+            }
         }
 
         .asterix {
