@@ -31,6 +31,52 @@
     .imgMapa {
         width: 100%;
         max-width: 1400px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        min-height: 600px;
+
+        svg {
+            width: 100%;
+        }
+
+
+        #tooltip_mapa>div {
+            position: absolute;
+            top: 0;
+            max-width: 450px;
+            width: calc(100% - 40px);
+            background: rgba(255, 255, 255, 0.8);
+            color: #333;
+            padding: 5px;
+            border: 2px solid $naranja;
+            padding-top: 10px;
+
+
+            p {
+                margin: 0;
+                text-align: center;
+                font-size: 1.5em;
+                font-weight: bold;
+                color: rgba(252, 145, 58, 0.8);
+
+                a {
+                    text-transform: lowercase;
+                    font-weight: normal;
+                    display: block;
+                    text-decoration: none;
+                    font-size: 0.6em;
+                    background-color: $naranja;
+                    padding: 3px;
+                    font-family: 'Alegreya', serif;
+                    text-align: center;
+                    color: white;
+                    border-radius: 10px;
+                    margin-top: 10px;
+                }
+            }
+
+        }
     }
 
     &.transparent {
