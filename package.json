@@ -9,7 +9,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "camera-controls": "^1.19.1",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "photo-sphere-viewer": "^4.0.4",
     "react": "^16.13.1",
     "react-bodymovin": "^2.0.0",
